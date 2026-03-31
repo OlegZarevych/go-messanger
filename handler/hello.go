@@ -19,3 +19,7 @@ func byeHandler(w http.ResponseWriter, r *http.Request) {
 func NewHelloHandler() http.Handler {
 	return http.HandlerFunc(helloHandler)
 }
+
+func NewByeHandler() http.Handler {
+	return http.HandlerFunc(byeHandler)
+}
